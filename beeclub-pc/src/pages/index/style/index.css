@@ -1,0 +1,377 @@
+/* #1DD39A 00b9b2 1ab394*/
+
+.index-header {
+    height: 120px;
+}
+.index-header-logo-wrapper{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.index-header-logo {
+    /* width: 192px;
+    height: 80px; */
+    width: 131px;
+    height: 51px;
+    /* background: url(//8.url.cn/edu/edu_modules/edu-ui/img/bg/logo192-3x.e89120ba.png#unsprite) no-repeat; */
+    background: url(./img/course-logo.png) no-repeat;
+    /* background-size: 192px 80px; */
+    background-size: 131px 51px;
+    vertical-align: middle;
+}
+/* 首页搜索域 */
+.index-search-wrapper{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.index-mod-search{
+    box-sizing: content-box;
+    width: 348px;
+    border: 1px solid #ccc;
+    height: 48px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.index-mod-search-input{
+    box-sizing: content-box;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 ;
+    padding: 10px;
+    background: 0 0;
+    text-indent: 12px;
+    vertical-align: top;
+    border: 0;
+}
+.index-mod-search-btn{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /* background-color: #23b8ff; */
+    background-color: #1DD39A;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* 头部用户区域 */
+.index-user-area{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+
+
+/* 首页导航 */
+.index-nav {
+    height: 50px;
+}
+
+.index-category-wrapper {
+    width: 210px;
+    /* background-color: #1DD39A; */
+    height: 50px;
+    position: relative;
+    overflow: visible;
+}
+
+.index-category-wrapper-title {
+    height: 50px;
+    line-height: 50px;
+    /* background-color: #1DD39A; */
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, right top, from(#1DD39A), to(#86E4C6));
+    background: -webkit-linear-gradient(left, #1DD39A, #86E4C6);
+    background: -o-linear-gradient(left, #1DD39A, #86E4C6);
+    background: linear-gradient(90deg, #1DD39A, #86E4C6);
+}
+
+.index-category-wrapper-title > * {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.index-category-wrapper-title > i.fa-list-ul{
+    font-weight: 300;
+}
+
+.index-category-wrapper:hover .index-category-container {
+    display: block;
+}
+
+/* 类目容器 */
+.index-category-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 210px;
+    left: 0;
+    z-index: 100;
+    /* height: 200px; */
+}
+
+.index-category:hover .index-category-title {
+    background-color: #f4f4f4;
+}
+
+.index-category-title > *{
+    margin-left: 12px;
+}
+
+.index-category:hover .index-category-content {
+    display: block;
+}
+
+.index-category {
+    border-right: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.index-category-title {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #272A38;
+    font-size: 18px;
+}
+
+.index-category-content {
+    display: none;
+    position: absolute;
+    top: 1px;
+    /* top: 0; */
+    left: 100%;
+    width: 740px;
+    min-height: calc(100% - 4px);
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 1px 2px 2px 1px #f3f3f3;
+}
+
+
+.index-category-content .cate-titles{
+    font-size: 16px;
+    font-weight: 600;
+}
+.index-category-content .cate-list{
+
+}
+
+.index-category-content .cate-list > div{
+    position: relative;
+    margin: 18px auto;
+}
+.index-category-content .cate-list .sub-cate-title{
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+   
+}
+.index-category-content .cate-list a{
+    color: #333;
+}
+.index-category-content .cate-list a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.index-category-content .sub-cate-list{
+    width: 584px;
+}
+.index-category-content .sub-cate-list > a{
+    display: inline-block; padding: 0 14px;
+}
+
+
+
+
+/* 首页导航 */
+
+.index-nav-wrapper {
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.index-nav-wrapper>a {
+    display: inline-block;
+    margin: 0 14px;
+}
+.index-nav-wrapper>a:hover{
+    color: #1DD39A;
+    text-decoration: underline;
+}
+
+/* 首页用户进入区块 */
+.index-user-entry-wrapper{
+    z-index: 4;
+    position: absolute;
+    right: 1px;
+    top: 50px;
+    width: 214px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: auto;
+    box-shadow: 0 1px 10px 3px rgba(0,0,0,.1);
+    padding: 10px;
+    height: 220px;
+    text-align: center;
+}
+
+/* 首页轮播图 */
+
+.carousel-wrapper {
+    height: 320px;
+    background: #e8e8e8;
+}
+
+
+.banner-slide-wrapper{
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.banner-slide-container{
+    width: 922px;
+    position: relative;
+}
+
+.banner-slide-btn{
+    position: absolute;
+    height: 50px;
+    line-height: 46px;
+    width: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.4);
+    font-size: 22px;
+    z-index: 1;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 135px;
+    display: none;
+}
+
+.banner-slide-btn:hover{
+    background-color: rgba(0,0,0,.6);
+    font-size: 24px;
+}
+
+.banner-slide-btn.banner-slide-btn-pre{
+    left: 4px;
+}
+.banner-slide-btn.banner-slide-btn-next{
+    right:4px;
+}
+
+.banner-slide-wrapper:hover .banner-slide-btn{
+    display: block;
+}
+
+.banner-slide{
+    list-style: none;
+    /* height: 100%; */
+    height: 320px;
+    width: 100%;
+}
+
+.banner-slide>li,.banner-slide>li>a,.banner-slide>li>a>div,.banner-slide>li>a>div>div,.banner-slide>li>a>div>div>img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.banner-slide > li{
+    display: none;
+}
+.banner-slide > li.active{
+    display: block;
+}
+
+.banner-slide>li>a{
+    position: relative;
+}
+.banner-slide>li>a>div{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+.banner-slide>li>a>div>div{
+    width: 970px;
+}
+
+.banner-slide-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 14px;
+    bottom: 20px;
+    z-index: 2;
+    text-align: center;
+}
+
+.banner-slide-dots > span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: width .3s;
+}
+
+.banner-slide-dots > span.active{
+    background-color: rgb(29, 211, 154);
+    width: 20px;
+    transition: width .3s;
+}
+
+
+
+.index-recomment-content {
+    /* clear: both; */
+}
+
+.index-recommend {
+    clear: both;
+    margin: 20px 0;
+}
+.index-recommend-title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    position: relative;
+}
+
+.index-recommend-title > .index-recommentd-more{
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 2px;
+}
+.index-recommend-title > .index-recommentd-more > a{
+    font-size: 14px;
+    color: #a1a1a3;
+}
+.index-recommend-title > .index-recommentd-more > a:hover{
+    color: #1DD39A;
+}
+.index-recommend-title > .index-recommentd-more > a > *{
+    margin-left: 6px;
+}

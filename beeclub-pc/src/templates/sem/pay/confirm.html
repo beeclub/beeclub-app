@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!../../layout/head.html')  %>
+    <title> <%= htmlWebpackPlugin.options.title%> </title>
+    <script>
+        var domain = "";
+    </script>
+</head>
+
+<body>
+    <%= require('html-loader!../../layout/com-header.html')  %>
+
+    <div class="w cart-header">
+        <div class="w-1200">
+            商城
+        </div>
+    </div>
+    <div class="w">
+        <div class="w-1200 cart-body">
+            <div class="title-box clearfix">
+                <p class="float-left goods-info-title">商品信息</p>
+                <a href="javascript:void(0);" data-url="https://www.imooc.com/user/feedback?order"
+                    class="float-right js-show-meiqia">我有疑问，需要反馈？</a>
+            </div>
+            <div class="detail-box" id="confirm-detail-box">
+
+            </div>
+            <div class="pay-box">
+                <div class="row-bottom">
+                    <div class="row">
+                        <div class="goods-total-price-box clearfix">
+                            <p class="r rw price-num">
+                                <em>￥</em><span id="js-actual-price">348.00</span>
+                            </p>
+                            <p class="r price-text"><span class="js-total-hide">共<span>1</span>件商品，</span>商品总金额：</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- 优惠券/优惠码抵扣 -->
+                    <div class="coupons-discount-box clearfix" style="display:none;">
+                        <p class="r rw price-num">-<em>￥</em><span id="js-coupon-lose-money">0.00</span></p>
+                        <p class="r price-text">优惠券/优惠码抵扣：</p>
+                    </div>
+                    <!-- 优惠券抵扣end -->
+
+
+
+
+                    <!-- 组合套餐 or 学生优惠 -->
+                    <div class="package-discount-box clearfix">
+                        <p class="r rw price-num">-<em>￥</em><span id="js-discount-lose-money">40.00</span></p>
+                        <p class="r price-text">优惠折扣：</p>
+                    </div>
+                    <!-- 组合套餐 or 学生优惠end -->
+
+                    <div class="pay-price-box clearfix">
+                        <p class="r rw price">
+                            <em>￥</em><span id="js-pay-price">308.00</span>
+                        </p>
+                        <p class="r price-text">应付：</p>
+                    </div>
+
+                    <div class="pay-add-sign">
+                        <ul class="clearfix">
+                            <li>支持花呗</li>
+                            <li>可开发票</li>
+                            <li class="drawback">7天可退款<i class="js-check-back imv2-ques"></i>
+                                <a href="//www.imooc.com/help/detail/105" target="_blank" class="checkbackbtn"
+                                    style="display: none;"><i class="arrow"></i>查看退款规则</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <a href="javascript:void(0);" class="r moco-btn moco-btn-red submit-btn js-pay-submit"
+                        data-typecate="normal">提交订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= require('html-loader!../../layout/footer.html')  %>
+</body>
+
+</html>

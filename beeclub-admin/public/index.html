@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>beeclub后台管理</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but beeclub-admin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    
+    <style>
+      .to-grant-authorization{
+        height: 40px; background-color: #eeeeee;position:fixed;top: 70px;width: 24px;z-index: 9999999999;padding: 4px;
+        right: -20px;
+        border-radius: 4px 0 0 4px;
+      }
+      .to-grant-authorization:hover{
+        right:0;
+      }
+
+      #to-grant-authorization-a{text-decoration: none;color: #00B9B2;}
+    </style>
+    <div class="to-grant-authorization">
+      <a id="to-grant-authorization-a" href="" target="_bank">
+        <span>授权</span>
+      </a>
+    </div>
+    
+  </body>
+</html>

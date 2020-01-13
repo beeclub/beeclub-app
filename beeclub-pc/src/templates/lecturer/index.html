@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!../layout/head.html')  %>
+    <title> <%= htmlWebpackPlugin.options.title%> </title>
+    <script>
+        var domain = "讲师";
+    </script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+</head>
+
+<body>
+    <%= require('html-loader!../layout/com-header.html')  %>
+    <div id="leturer" style="margin: 60px 0;" class="w">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <nav style="padding: 20px;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li @click="navClick('course')" role="presentation"
+                                :class="active == 'course' ? 'active':''"><a href="#course">课程管理</a></li>
+                            <li @click="navClick('student')" role="presentation"
+                                :class="active == 'student' ? 'active':''"><a href="#student">学员管理</a></li>
+                            <li @click="navClick('suggestion')" role="presentation"
+                                :class="active == 'suggestion' ? 'active':''"><a href="#suggestion">反馈</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-sm-10">
+                    <div class="container-fluid">
+                        <div v-if="active == 'course'" class="">
+                            <h2>课程管理</h2>
+                            <div>
+                                <div class="search-container">
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <input class="btn btn-warning" type="button" value="发布课程"
+                                                @click="active = 'newCourse'">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" style="width: 240px;"
+                                                placeholder="课程名称、副标题、关键字查询">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table class="table">
+                                    <caption>我发布的课程列表</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>课程标题</th>
+                                            <th>课程副标题</th>
+                                            <th>课程方向</th>
+                                            <th>课程类别</th>
+                                            <th>是否免费</th>
+                                            <th>课程类型</th>
+                                            <th>审核状态</th>
+                                            <th>审核时间</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tanmay</td>
+                                            <td>Bangalore</td>
+                                            <td>Tanmay</td>
+                                            <td>Bangalore</td>
+                                            <td>Tanmay</td>
+                                            <td>Bangalore</td>
+                                            <td>Tanmay</td>
+                                            <td>Bangalore</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sachin</td>
+                                            <td>Mumbai</td>
+                                            <td>Sachin</td>
+                                            <td>Mumbai</td>
+                                            <td>Sachin</td>
+                                            <td>Mumbai</td>
+                                            <td>Sachin</td>
+                                            <td>Mumbai</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div v-if="active == 'newCourse'" class="">
+                            <h2>发布课程</h2>
+                            <div>
+                                <div role="form">
+                                    <div class="form-group">
+                                        <label>课程标题</label>
+                                        <input type="email" class="form-control" placeholder="课程标题">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>课程副标题</label>
+                                        <textarea class="form-control" style="resize:vertical;" placeholder="课程副标题"
+                                            rows="1"></textarea>
+                                    </div>
+                                    <div class="form-group form-inline">
+                                        <label>课程方向</label>
+                                        <select class="form-control" v-selector="'test'">
+                                            <option v-for="(item ,i ) in directionList" :value="item.id">{{item.text}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Check me out
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div v-if="active == 'student'" class="">
+                            <h2>学员管理</h2>
+                        </div>
+                        <div v-if="active == 'suggestion'" class="">
+                            <h2>反馈</h2>
+                            <div>
+                                <div role="form">
+                                    <div class="form-group">
+                                        <!-- <label for="name">输入信息</label> -->
+                                        <textarea class="form-control" style="resize:vertical;" placeholder="输入反馈信息"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <%= require('html-loader!../layout/footer.html')  %>
+</body>
+
+</html>

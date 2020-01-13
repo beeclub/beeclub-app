@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .modal-wrapper {
+            display: block;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .dialog-wrapper {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: auto;
+            min-width: 50%;
+            width: 50%;
+        }
+
+        .dialog-body {
+            padding: 15px;
+        }
+
+        .w-auto {
+            width: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="../lib/ele/index.css">
+</head>
+
+<body>
+    <!-- <div class="">
+        <a href="javascript:;" class="header-userinfo-a">
+            <span>'+ data.username +'</span>
+            <img class="header-avatar" src="'+ data.avatar +'" width="34" height="34">
+        </a>
+        <div class="user-operation-wrapper">
+            <div class="user-operation-main">
+                <a class="user-operation-item"><i class="fa fa-cog fa-flag"></i>&nbsp; 我的课程</a>
+                <a class="user-operation-item"><i class="fa fa-cog fa-list-ul"></i>&nbsp; 订单中心</a>
+                <a class="user-operation-item"><i class="fa fa-cog fa-fw"></i>&nbsp; 个人设置</a>
+            </div>
+            <div class="div-line-h"></div>
+            <div class="user-operation-main"><a class="logout-btn"><i class="fa fa-power-off"></i>&nbsp; 注销</a></div>
+        </div>
+    </div> -->
+    <!-- <div class="modal-wrapper">
+        <div class="dialog-wrapper">
+            <div class="dialog-header">
+                <span>标题</span>
+                <span><i class="fa fa-close"></i></span>
+            </div>
+            <div class="dialog-body">
+                内容
+            </div>
+            <div class="dialog-footer">
+                <div class="div-line-h"></div>
+                <div>
+                    按钮
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div>
+        <form class="el-form">
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">活动名称</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div class="el-input">
+                        <input type="text" autocomplete="off" class="el-input__inner">
+                    </div>
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">活动区域</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div class="el-select">
+                        
+                        <div class="el-input el-input--suffix">
+                            <input type="text" readonly="readonly" autocomplete="off" placeholder="请选择活动区域"
+                                class="el-input__inner">
+                            <span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                        class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                    
+                                    
+                                    
+                                    
+                                    </span>
+                                </span>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">活动时间</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div class="el-col el-col-11">
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date"
+                            style="width: 100%;">
+                            <input type="text" autocomplete="off" name="" placeholder="选择日期"
+                                class="el-input__inner"><span class="el-input__prefix"><i
+                                    class="el-input__icon el-icon-date"></i>
+                                </span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                        class="el-input__icon"></i>
+                                    
+                                    
+                                    
+                                    </span>
+                                </span>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="line el-col el-col-2">-</div>
+                    <div class="el-col el-col-11">
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--time"
+                            style="width: 100%;">
+                            <input type="text" autocomplete="off" name="" placeholder="选择时间"
+                                class="el-input__inner"><span class="el-input__prefix"><i
+                                    class="el-input__icon el-icon-time"></i>
+                                </span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                        class="el-input__icon"></i>
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">即时配送</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div role="switch" class="el-switch"><input type="checkbox" name="" true-value="true"
+                            class="el-switch__input">
+                        <span class="el-switch__core" style="width: 40px;"></span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">活动性质</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div role="group" aria-label="checkbox-group" class="el-checkbox-group"><label
+                            class="el-checkbox"><span class="el-checkbox__input"><span
+                                    class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="false"
+                                    name="type" class="el-checkbox__original" value="美食/餐厅线上活动"></span><span
+                                class="el-checkbox__label">美食/餐厅线上活动</span></label> <label class="el-checkbox"><span
+                                class="el-checkbox__input"><span class="el-checkbox__inner"></span><input
+                                    type="checkbox" aria-hidden="false" name="type" class="el-checkbox__original"
+                                    value="地推活动"></span><span class="el-checkbox__label">地推活动</span></label> <label
+                            class="el-checkbox"><span class="el-checkbox__input"><span
+                                    class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="false"
+                                    name="type" class="el-checkbox__original" value="线下主题活动"></span><span
+                                class="el-checkbox__label">线下主题活动</span></label> <label class="el-checkbox"><span
+                                class="el-checkbox__input"><span class="el-checkbox__inner"></span><input
+                                    type="checkbox" aria-hidden="false" name="type" class="el-checkbox__original"
+                                    value="单纯品牌曝光"></span><span class="el-checkbox__label">单纯品牌曝光</span></label></div>
+                    
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">特殊资源</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div role="radiogroup" class="el-radio-group"><label role="radio" tabindex="0"
+                            class="el-radio"><span class="el-radio__input"><span class="el-radio__inner"></span><input
+                                    type="radio" aria-hidden="true" tabindex="-1" class="el-radio__original"
+                                    value="线上品牌商赞助"></span><span class="el-radio__label">线上品牌商赞助</span></label> <label
+                            role="radio" tabindex="-1" class="el-radio"><span class="el-radio__input"><span
+                                    class="el-radio__inner"></span><input type="radio" aria-hidden="true" tabindex="-1"
+                                    class="el-radio__original" value="线下场地免费"></span><span
+                                class="el-radio__label">线下场地免费</span></label></div>
+                    
+                </div>
+            </div>
+            <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">活动形式</label>
+                <div class="el-form-item__content" style="margin-left: 80px;">
+                    <div class="el-textarea"><textarea autocomplete="off" class="el-textarea__inner"
+                            style="min-height: 33px;"></textarea>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="el-form-item">
+                
+                <div class="el-form-item__content" style="margin-left: 80px;"><button type="button"
+                        class="el-button el-button--primary">
+                        
+                        <span>立即创建</span></button> <button type="button" class="el-button el-button--default">
+                        
+                        <span>取消</span></button>
+                    
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+
+    <!-- <div>
+        <form class="el-form">
+            <div class="el-form-item"><label class="el-form-item__label">电话号码</label>
+                <div class="el-form-item__content">
+                    <div class="el-input">
+                        <input type="text" autocomplete="off" class="el-input__inner"><button type="button" class="el-button el-button--primary"><span>发送验证码</span></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="el-form-item"><label class="el-form-item__label">活动名称</label>
+                <div class="el-form-item__content">
+                    <div class="el-input">
+                        <input type="text" autocomplete="off" class="el-input__inner">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+
+    <div>
+        <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">电话号码</label>
+            <div class="el-form-item__content" style="margin-left: 80px;">
+                <div class="el-input">
+                    <input type="text" name="mobile" autocomplete="off" style="width: auto;" class="el-input__inner">
+                    <button type="button"
+                        class="el-button el-button--primary el-button--small"><span>发送验证码</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">验证码</label>
+            <div class="el-form-item__content" style="margin-left: 80px;">
+                <div class="el-input">
+                    <input type="text" name="verifyCode" autocomplete="off" style="width: auto;" class="el-input__inner ">
+                </div>
+            </div>
+        </div>
+        <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">姓名</label>
+            <div class="el-form-item__content" style="margin-left: 80px;">
+                <div class="el-input">
+                    <input type="text" name="name" autocomplete="off" style="width: auto;" class="el-input__inner ">
+                </div>
+            </div>
+        </div>
+        <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">身份证号</label>
+            <div class="el-form-item__content" style="margin-left: 80px;">
+                <div class="el-input">
+                    <input name="ID" type="text" autocomplete="off" class="el-input__inner ">
+                </div>
+            </div>
+        </div>
+        <div class="el-form-item"><label class="el-form-item__label" style="width: 80px;">申请自述</label>
+            <div class="el-form-item__content" style="margin-left: 80px;">
+                <div class="el-textarea">
+                    <textarea name="readme" autocomplete="off" class="el-textarea__inner" style="min-height: 33px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

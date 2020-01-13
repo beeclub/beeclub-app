@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%= require('html-loader!./layout/head.html')  %>
+	<title> <%= htmlWebpackPlugin.options.title%> </title>
+</head>
+<body>
+    <%= require('html-loader!./layout/sign-header.html')  %>
+    <div class="">
+        <div>
+            <div class="sign-wrap">
+                <div class="sign away-document">
+                    <div>
+                        <div class="sign-tab">
+                            <span class=""><a href="/login.html">登录</a></span>
+                            <i>·</i>
+                            <span class="active">注册</span>
+                        </div>
+                        <div class="sign-content" id="sign-up-wrap">
+                            <div class="sign-ele-item">
+                                <input class="sign-input" type="text" name="register_email" placeholder="邮箱" autocomplete="off">
+                            </div>
+                            <div class="sign-ele-item">
+                                <input class="sign-input" type="password" name="register_password" placeholder="密码" autocomplete="off">
+                            </div>
+                            <!-- <div class="sign-ele-item">
+                                <input class="sign-input" type="password" name="register_com_password" placeholder="确认密码" autocomplete="off">
+                            </div> -->
+                            <div class="sign-ele-item">
+                                <input class="sign-input sign-auth-code" placeholder="验证码" type="text" name="register_auth_code" autocomplete="off"><input type="button" class="sign-input sign-send-auth-code" value="发送验证码">
+                            </div>
+                            <!-- <div class="sign-ele-item" style="font-size: 12px;">
+                                <input type="checkbox" name="remember"/>7天内自动登录
+                            </div> -->
+                            <div  class="sign-ele-item">
+                                <input class="sign-btn" id="page-register-btn" type="button" value="注册"/>
+                            </div>
+                            <div class="sign-ele-item sign-swith-qcode-wrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

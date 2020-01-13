@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <script>
+        var query = window.location.search.substring(1);
+        var vars = query.split("&"),
+            queryParam = {};
+        if (query) {
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                queryParam[pair[0]] = pair[1];
+            }
+        }
+        console.log(queryParam)
+
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+    <!-- <script src="//unpkg.com/element-ui@2.12.0/lib/index.js"></script> -->
+    <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+    <!-- <script src="lib/baiduTemplate.js"></script> -->
+</head>

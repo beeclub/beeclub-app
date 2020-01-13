@@ -1,0 +1,566 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    /* overflow: auto; */
+    font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    /* font-variant: tabular-nums; */
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    position: relative;
+    min-width: 1152px;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden;
+    touch-action: none; */
+}
+
+* {
+    *zoom: 1;
+    touch-action: pan-y; 
+}
+
+.w {
+    min-width: 1200px;
+}
+.w-940{
+    width: 940px;
+    margin: auto;
+}
+.w-1200 {
+    width: 1200px;
+    margin: auto;
+}
+
+.w-1152 {
+    width: 1152px;
+    margin: auto;
+}
+
+.w-750{
+    width: 750px;
+    margin: auto;
+}
+
+.w-1600-1200{
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* 650   750  1080  1152 1200 1152-400  1152-400 1600 900 */
+
+.w-auto {
+    width: auto;
+}
+
+.text-nowrap {
+    white-space: normal nowrap
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    /* color: #000000; */
+}
+a{
+    color: #000000;
+}
+
+a, area, button, [role="button"], input:not([type="range"]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea, button {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+input:focus,button:hover {
+    outline: none;
+    -webkit-appearance: none;
+    border:none;
+}
+
+
+.bg-f8f8f8{
+    background-color: #f8f8f8;
+}
+.bg-fff{
+    background-color: #fff;
+}
+
+
+.border-radius-5{
+    border-radius: 5px;
+}
+
+
+.padding-10{
+    padding: 10px;
+}
+.padding-15{
+    padding: 15px;
+}
+
+/**浮动*/
+
+.float-left, .l {
+    float: left;
+}
+
+
+.float-right, .r {
+    float: right;
+}
+
+
+.clear-both {
+    clear: both;
+}
+
+.clearfix:after , .clear-both, .clear-both:after, .c-b::after{
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.text-center ,.t-c{
+    text-align: center;
+}
+.text-right, .t-r{
+    text-align: right;
+}
+.text-left, .t-l{
+    text-align: left;
+}
+.pos-rel , .p-l{
+    position: relative;
+}
+
+.inline-block , .i-b{
+    display: inline-block;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.link{
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.divide-line-v ,.l-v{
+
+}
+.divide-line-h, .l-h{
+    margin: 10px;
+    height: 1px;
+    background-color: #e8e8e8;
+}
+
+
+.bee-tab-wrapper{
+
+}
+
+.bee-tab-wrapper .bee-tab-title{
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.bee-tab-wrapper .bee-tab-title-item{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 12px;
+    position: relative;
+}
+.bee-tab-wrapper .bee-tab-title-item::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    height: 2px;
+    background-color: inherit;
+    width: 50%;
+}
+.bee-tab-wrapper .bee-tab-title-item.active{
+    color: #1DD39A;
+}
+.bee-tab-wrapper .bee-tab-title-item.active::after{
+    background-color: #1DD39A;
+}
+.bee-tab-wrapper .bee-tab-content-item{
+    display: none;
+}
+.bee-tab-wrapper .bee-tab-content-item.active{
+    display: block;
+}
+
+/* 公共 */
+
+.loginged-user-area{
+    position: relative;
+    height: 55px;
+    width: auto;
+}
+.loginged-user-area > .loginged-user-area-title{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 60px;
+    /* vertical-align: top; */
+    vertical-align: middle;
+}
+
+.loginged-user-area:hover>.loginged-user-area-content{
+    display: block;
+}
+
+.loginged-user-area > .loginged-user-area-content{
+    display: none;
+    position: absolute;
+    /* top: calc( 100% + 4px); */
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    width: 280px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 8px 8px 16px 8px rgba(7,17,27,0.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.loginged-user-area > .loginged-user-area-content>div{
+    padding: 8px 20px;
+}
+
+.loginged-user-area > .loginged-user-area-content::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 32px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1DD39A;
+}
+.loginged-user-area-content-intro{
+    background-color: #1DD39A;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+}
+
+
+.header-user-head-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.user-area-module-menu{
+    
+}
+
+.bee-auth-sign-out{
+    cursor: pointer;
+}
+.bee-auth-sign-out:hover{
+    color: #FF0000;
+}
+.bee-auth-sign-out > *{
+    margin-left: 8px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 卡片 */
+
+.bee-card-2 {}
+
+.bee-card-3 {}
+
+.bee-card-4 {}
+
+.bee-card-5 {}
+
+.bee-card-wrapper {
+    width: 1200px;
+    padding: 30px 0 20px;
+    clear: both;
+}
+
+.bee-card-2.bee-card-wrapper>.bee-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.bee-card-2>.bee-card {
+    width: 585px;
+    /* height: 100px; */
+    margin: 0 30px 30px 0;
+}
+
+.bee-card-3.bee-card-wrapper>.bee-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.bee-card-3>.bee-card {
+    width: 380px;
+    /* height: 215px; */
+    margin: 0 30px 30px 0;
+}
+
+.bee-card-4.bee-card-wrapper>.bee-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.bee-card-4>.bee-card {
+    width: 278px;
+    /* height: 215px; */
+    margin: 0 29px 26px 0;
+}
+
+.bee-card-5.bee-card-wrapper>.bee-card:nth-child(5n) {
+    margin-right: 0;
+}
+
+.bee-card-5>.bee-card {
+    width: 220px;
+    /* height: 215px; */
+    margin: 0 25px 26px 0;
+}
+
+.bee-card {
+    box-sizing: border-box;
+    float: left;
+    /* background-color: #1DD39A; */
+    background-color: #fefefe;
+    -webkit-box-shadow: 0 2px 5px 0 #d9dfe9;
+    box-shadow: 0 2px 5px 0 #d9dfe9;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
+    transition-property: -webkit-transform, -webkit-box-shadow;
+    -o-transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+    min-height: 100px;
+    /* background-color: #f8f8f8; */
+}
+
+.bee-card:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0 4px 5px 0 #d9dfe9;
+    box-shadow: 0 4px 5px 0 #d9dfe9;
+}
+
+
+/* 友情链接 */
+.friendly-link-container{
+    padding: 30px 0;
+}
+
+.friendly-link-wrapper {
+    margin-top: 20px;
+    list-style: none;
+    /* background-color: #F8FAFC; */
+}
+
+.friendly-link-wrapper>li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.friendly-link-wrapper>li>a {
+    color: #333;
+    font-size: 12px;
+}
+
+.friendly-link-wrapper>li>a:hover {
+    text-decoration: underline;
+}
+
+/* 底部 */
+
+.bee-footer {
+    /* margin-top: 20px; */
+    padding: 36px 0;
+    background-color: #f0f0f1;
+    /* #F8FAFC */
+}
+
+
+.auth-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 200;
+}
+
+.auth-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.auth-header{
+    position: relative;
+    padding: 8px 0;
+}
+.auth-header > span{
+    margin-right: 28px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 10px;
+
+
+}
+.auth-header > span:hover,.auth-header > span.active{
+    color: #1DD39A;
+}
+.auth-header > span::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    height: 3px;
+    width: 50%;
+    left: 25%;
+    border-radius: 1px;
+    
+}
+.auth-header > span.active::after, .auth-header > span:hover::after{
+    background-color: #1DD39A;
+}
+
+.auth-container{
+    display: none;
+}
+.auth-container.active{
+    display: block;
+}
+
+.auth-header-close{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.auth-ele-wrapper input{
+    background-color: #F2F2F2;
+    /* #f6f6f6; */
+    padding-left: 20px;
+    width: 294px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 6px;
+}
+.auth-ele-wrapper input:focus{
+    /* border: 1px solid #B6B6B6;
+    background-color: #ffffff; */
+}
+.auth-ele-wrapper{
+    margin: 8px auto;
+}
+.auth-ele-tips{
+    padding: 4px;
+}
+.auth-send-authcode{
+    position: relative;
+}
+.auth-send-authcode > input{
+    width: 200px;
+}
+.auth-send-authcode > input:focus+button{
+    /* border: 1px solid #B6B6B6; */
+
+}
+.auth-send-authcode > button{
+    background-color: #F2F2F2;
+    position: absolute;
+    right: 0;
+    width: 101px;
+    line-height: 45px;
+    text-align: center;
+    height: 45px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.auth-send-authcode > button:hover{
+    color: #1DD39A;
+    cursor: pointer;
+}
+.auth-send-authcode > button.sent{
+    color: #1DD39A;
+}
+.auth-confirm-btn{
+    width: 294px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    margin: 8px auto;
+    background-color: #1DD39A;
+    border-radius: 6px;
+    color: #fff;
+}
+.auth-confirm-btn:hover{
+    color: #333;
+}
+.sign-in-block-wrapper{
+    display: none;
+}
+.sign-in-block-wrapper.active{
+    display:block;
+}
+
+
+.bee-auth-area .bee-auth-sign-in,.bee-auth-area .bee-auth-sign-up{
+    cursor: pointer;
+}

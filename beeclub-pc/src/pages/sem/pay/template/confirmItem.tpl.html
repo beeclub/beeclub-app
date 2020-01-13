@@ -1,0 +1,17 @@
+<ul>
+    {{#data}}
+    <li>
+        <a href="/course/detail.html?courseId={{subject.id}}" style="vertical-align: middle;" target="_blank"><img
+                src="{{thumb}}" alt="" class=""></a>
+        <div class="text-info-box">
+            <p class="package-title"></p>
+            <a href="/course/detail.html?courseId={{subject.id}}" target="_blank">
+                <p class="package-info-title">{{subject.name}}</p>
+            </a>
+        </div>
+        <div class="info-price">
+            <em>￥</em><span class="price">{{actualPrice}}</span>
+        </div>
+    </li>
+    {{/data}}
+</ul>

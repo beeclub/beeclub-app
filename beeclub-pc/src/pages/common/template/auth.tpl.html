@@ -1,0 +1,67 @@
+<div class="auth-mask">
+    <div class="auth-wrapper">
+        <div class="auth-header">
+            {{#if signIn}}
+            <span class="auth-sign-btn auth-sign-up">注册</span>
+            <span class="auth-sign-btn auth-sign-in active">登录</span>
+            {{else}}
+            <span class="auth-sign-btn auth-sign-up active">注册</span>
+            <span class="auth-sign-btn auth-sign-in">登录</span>
+            {{/if}}
+            <i class="fa fa-close auth-header-close"></i>
+        </div>
+        <div class="auth-body">
+            <div class="auth-container auth-sign-up-wrapper {{#if signIn}} {{else}}active {{/if}}">
+                <div>
+                    欢迎
+                </div>
+                <div>
+                    <div class="auth-ele-wrapper">
+                        <input type="text" name="" id="" placeholder="邮箱" autocomplete="off">
+                    </div>
+                    <div class="auth-ele-wrapper auth-send-authcode">
+                        <input type="text" name="authCode" id="" placeholder="验证码" autocomplete="off">
+                        <button role="signUp" class="auth-send-authcode-btn">获取验证码</button>
+                    </div>
+                    <div class="auth-ele-wrapper">
+                        <input type="password" name="" id="" placeholder="密码" autocomplete="off">
+                        <div class="auth-ele-tips">长度6-15位的密码</div>
+                    </div>
+                </div>
+                <div>
+                    <button class="auth-confirm-btn auth-confirm-btn--signUp">确定</button>
+                </div>
+            </div>
+            <div class="auth-container auth-sign-in-wrapper {{#if signIn}} active {{/if}}">
+                <div>
+                    <div class="sign-in-block-wrapper email">
+                        <div class="auth-ele-wrapper">
+                            <input type="text" name="email" id="" placeholder="邮箱" autocomplete="off">
+                        </div>
+                        <div class="auth-ele-wrapper auth-send-authcode">
+                            <input type="text" name="authCode" id="" placeholder="验证码" autocomplete="off">
+                            <button  role="signIn" class="auth-send-authcode-btn">获取验证码</button>
+                        </div>
+                    </div>
+                    <div class="sign-in-block-wrapper accountPwd active">
+                        <div class="auth-ele-wrapper">
+                            <input type="text" name="account" id="" placeholder="账号或者邮箱" autocomplete="off">
+                        </div>
+                        <div class="auth-ele-wrapper">
+                            <input type="password" name="password" id="" placeholder="密码" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="auth-confirm-btn auth-confirm-btn--signIn">确定</button>
+                </div>
+                <div>
+                    <!-- <span>邮箱验证码</span> | <span>微博</span><span>微信</span><span>qq</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="auth-footer">
+            <!-- 微信 | qq -->
+        </div>
+    </div>
+</div>

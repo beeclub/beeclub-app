@@ -1,0 +1,80 @@
+.cart-header{
+    height: 160px;
+    background-color: #e3e6e9;
+    background: url(./img/cart-header-bg.jpg) repeat-x left bottom;
+}
+.cart-header-warp{
+    height: 120px;
+    line-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+
+
+.cart-body{
+    padding: 0 36px 32px;
+    background-color: #fff;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.title-box{
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.title-box .goods-info-title {
+    margin-left: 12px;
+    color: #07111b;
+    font-size: 16px;
+    line-height: 16px;
+}
+.title-box  > a{
+    color: #93999f;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+.detail-box > ul{
+    padding-bottom: 36px;
+    border-bottom: 1px solid #d9dde1;
+}
+.detail-box > ul > li:last-child{
+    margin-bottom: 0;
+}
+.detail-box > ul > li{
+    padding: 24px;
+    box-sizing: border-box;
+    background: #f3f5f7;
+    margin-bottom: 1px;
+    line-height: 90px;
+}
+
+.detail-box > ul > li > *{
+    display: inline-block;
+    height: 90px;
+}
+
+.detail-box > ul > li img{
+    width: 160px;
+    height: 90px;
+    margin-right: 24px;
+}
+
+.detail-box > ul > li .text-info-box {
+    width: 462px;
+    height: 90px;
+    margin-right: 96px;
+}
+.detail-box > ul > li  .info-price{
+    width: 286px;
+    font-size: 16px;
+    color: #f01414;
+}

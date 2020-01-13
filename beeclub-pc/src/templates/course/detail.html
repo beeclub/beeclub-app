@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!../layout/head.html')  %>
+    <title> <%= htmlWebpackPlugin.options.title%> </title>
+    <script>
+        var domain = "course";
+    </script>
+</head>
+
+<body>
+    <%= require('html-loader!../layout/com-header.html')  %>
+    <div class="w course-detail-main bg-f8f8f8" id="course-detail-main">
+        <div class="w">
+            <div class="w-1200" id="course-belong-cate">
+                <div class="breadcrumb">
+                </div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="w-1200 course-detail-wrapper bg-f8f8f8">
+                <div id="course-detail-header" class="course-detail-header bg-fff border-radius-5 c-b">
+                    <!-- <div class="course-detail-info ">
+                        <div id="thumb" class="course-detail-thumb  float-left">
+                            <img class="thumb-img" src="https://res.shiguangkey.com/file/201901/28/20190128140859147330684.png" alt="">
+                        </div>
+                        <div class="course-detail-purchase-info float-right   c-b">
+                            <div class="course-detail-purchase-title">
+                                <div class="course-title">
+                                    <h3 class="title">web前端编程0基础入门学习</h3>
+                                    <p class="description">
+                                        当下SpringBoot日渐取代SSM成为新项目首选框架，企业招聘对其要求也不断提高。掌握SpringBoot源码将助你高效定位和解决问题，仿写SpringBoot源码将帮你养成规范的代码习惯，轻松应对高标准的企业开发与面试要求。本课程通过图解+仿写教学模式，双管齐下，打造新手都能学得懂的源码课。
+                                    </p>
+                                </div>
+                                <div class="sem-info">
+                                    <div class="sem-price-share">
+                                        <div class="price bg-f8f8f8">
+                                            <span>免费</span><span style="text-decoration: line-through;">价值0.01</span>
+                                        </div>
+                                    </div>
+                                    <div class="sem-detail">
+                                       <div>报名人数: <span class="sem-value">301</span></div>
+                                       <div>学习周期：<span class="sem-value">2</span></div>
+                                       <div>教学时常：<span class="sem-value">2</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-detail-purchase-handle">
+                                <a class="purchase-handle-btn">
+                                    立即学习
+                                </a>
+                            </div>
+                        </div>
+                       <div class="clear-both"></div>
+                    </div> -->
+                </div>
+                <div class="course-detail-body">
+                    <div class="course-detail-content float-left  bg-fff">
+                        <!-- <img src="https://res.shiguangkey.com/file/201901/28/20190128111226250672470.png" alt=""> -->
+                        <div>
+                            <div class="bee-tab-wrapper" id="course-detail-tab">
+                                <div class="bee-tab-title">
+                                    <a class="bee-tab-title-item active">课程介绍</a>
+                                    <a class="bee-tab-title-item">课程目录</a>
+                                </div>
+                                <div class="bee-tab-content">
+                                    <div class="bee-tab-content-item active">
+                                        <div class="course-detail-decoration-wrapper" id="course-detail-decoration"></div>
+                                    </div>
+                                    <div class="bee-tab-content-item">
+                                        <ul>
+                                            <li>
+                                                第一单元
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="course-belong-organization float-right c-b  bg-fff">
+                        <div class="course-belong-organization-title">
+                            <span>讲师信息</span>
+                        </div>
+                        <div class="padding-15">
+                            <div>
+                                <span>讲师名称</span>
+                            </div>
+                            <div>
+                                <span>职级</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="course-detail-footer  bg-fff">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <%= require('html-loader!../layout/footer.html')  %>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!../layout/head.html')  %>
+    <title> <%= htmlWebpackPlugin.options.title%> </title>
+    <script>
+        var domain = "user";
+    </script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+
+<body>
+    <%= require('html-loader!../layout/com-header.html')  %>
+    <div id="personal-setting" class="w">
+        <div class="personal-simple" style="">
+            <div class="w-1152 personal-header">
+                <div class="person-header-avatar">
+                    <img class="avatar" src="https://img1.mukewang.com/545865890001495702200220-140-140.jpg" alt=""
+                        sizes="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="personal-setting w-1152">
+            <div class="personal-setting-nav-wrapper float-left">
+                <ul class="personal-setting-nav" id="personal-setting-nav">
+                    <li class="personal-setting-nav-item" role="personalInfo">
+                        个人信息
+                    </li>
+                    <li class="personal-setting-nav-item" role="bindAccount">
+                        账号绑定
+                    </li>
+                    <li class="personal-setting-nav-item" role="changePwd">
+                       修改密码
+                    </li>
+                    <li class="personal-setting-nav-item" role="addressSetting">
+                        地址设置
+                    </li>
+                    <li class="personal-setting-nav-item" role="realAuthentication">
+                        实名认证
+                    </li>
+                    <li class="personal-setting-nav-item" role="myCollecting">
+                        收藏
+                    </li>
+                    <li class="personal-setting-nav-item" role="applyBecomeLecturer">
+                        申请成为讲师
+                    </li>
+                </ul>
+            </div>
+            <div class="personal-setting-content-wrap float-right">
+                <div class="personal-setting-item-wrapper" id="personalInfo"></div>
+                <div class="personal-setting-item-wrapper" id="bindAccount"></div>
+                <div class="personal-setting-item-wrapper" id="changePwd"></div>
+                <div class="personal-setting-item-wrapper" id="addressSetting"></div>
+                <div class="personal-setting-item-wrapper" id="realAuthentication"></div>
+                <div class="personal-setting-item-wrapper" id="myCollecting"></div>
+                <div class="personal-setting-item-wrapper" id="applyBecomeLecturer"></div>
+                <!-- ${require("./module/personalInfo.temp.html")}
+                ${require("./module/bindAccount.temp.html")}
+                ${require("./module/changePwd.temp.html")}
+                ${require("./module/addressSetting.temp.html")}
+                ${require("./module/realAuthentication.temp.html")}
+                ${require("./module/myCollecting.temp.html")}
+                ${require("./module/applyBecomeLecturer.temp.html")} -->
+            </div>
+        </div>
+
+    </div>
+    <script>
+        
+    </script>
+    <%= require('html-loader!../layout/footer.html')  %>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<div>
+    <div class="apply-become-lecturer-header">
+        <div class="el-page-header">
+            {{!  <div class="el-page-header__left">
+               <i class="el-icon-back"></i><div class="el-page-header__title">返回</div>
+            </div> }}
+            <div class="el-page-header__content">申请成为讲师</div>
+        </div>
+
+    </div>
+    <div>
+        <div class="steps-wrapper">
+            <div class="el-steps el-steps--horizontal">
+                <div class="el-step is-horizontal" style="flex-basis: 50%; margin-right: 0px;">
+                    <div class="el-step__head is-success">
+                        <div class="el-step__line" style="margin-right: 0px;"><i class="el-step__line-inner"
+                                style="transition-delay: 0ms; border-width: 0px; width: 0%;"></i></div>
+                        <div class="el-step__icon is-text"><i class="el-step__icon-inner is-status el-icon-check"></i>
+                        </div>
+                    </div>
+                    <div class="el-step__main">
+                        <div class="el-step__title is-success">提交申请</div>
+                        <div class="el-step__description is-success"></div>
+                    </div>
+                </div>
+                <div class="el-step is-horizontal" style="flex-basis: 50%; margin-right: 0px;">
+                    <div class="el-step__head is-process">
+                        <div class="el-step__line" style="margin-right: 0px;"><i class="el-step__line-inner"
+                                style="transition-delay: -150ms; border-width: 0px; width: 0%;"></i></div>
+                        <div class="el-step__icon is-text">
+                            <div class="el-step__icon-inner">2</div>
+                        </div>
+                    </div>
+                    <div class="el-step__main">
+                        <div class="el-step__title is-process">完善资料</div>
+                        <div class="el-step__description is-process"></div>
+                    </div>
+                </div>
+                <div class="el-step is-horizontal is-flex" style="flex-basis: 50%; max-width: 33.3333%;">
+                    <div class="el-step__head is-wait">
+                        <div class="el-step__line"><i class="el-step__line-inner"></i></div>
+                        <div class="el-step__icon is-text">
+                            <div class="el-step__icon-inner">3</div>
+                        </div>
+                    </div>
+                    <div class="el-step__main">
+                        <div class="el-step__title is-wait">完成</div>
+                        <div class="el-step__description is-wait"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+            <div class="demo-form applayLecturerStep1" id="applayLecturerStep1">
+                <div class="el-form-item is-required"><label class="el-form-item__label" style="width: 80px;">手机号码</label>
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-input {{^step1}}is-disabled{{/step1}}">
+                            {{! is-disabled}}
+                            <input type="text" name="mobile"  autocomplete="off" style="width: 240px;" value="{{mobile}}" {{^step1}}disabled="disabled"{{/step1}}
+                                class="el-input__inner">
+                        </div>
+                    </div>
+                </div>
+                {{#step1}}
+                <div class="el-form-item is-required"><label class="el-form-item__label" style="width: 80px;">验证码</label>
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-input {{^step1}}is-disabled{{/step1}}" >
+                            <input type="text" name="verifyCode" autocomplete="off" style="width: 120px;"
+                                class="el-input__inner ">
+                            <button type="button" class="el-button el-button--primary el-button--small apply-verifyCode" 
+                                style="margin-left:18px;"><span>发送验证码</span></button>
+                        </div>
+                    </div>
+                </div>
+                {{/step1}}
+                <div class="el-form-item is-required"><label class="el-form-item__label" style="width: 80px;">姓名</label>
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-input {{^step1}}is-disabled{{/step1}}">
+                            <input type="text" name="name" autocomplete="off" style="width: 240px;" value="{{name}}" {{^step1}}disabled="disabled"{{/step1}}
+                                class="el-input__inner ">
+                        </div>
+                    </div>
+                </div>
+                <div class="el-form-item is-required"><label class="el-form-item__label" style="width: 80px;">身份证号</label>
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-input {{^step1}}is-disabled{{/step1}}">
+                            <input name="idCard" type="text" autocomplete="off" class="el-input__inner " value="{{idCard}}" {{^step1}}disabled="disabled"{{/step1}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-form-item is-required"><label class="el-form-item__label" style="width: 80px;">申请自述</label>
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-textarea {{^step1}}is-disabled{{/step1}}">
+                            <textarea name="readme" autocomplete="off" placeholder="最少50个字" aria-placeholder="最少50个字" class="el-textarea__inner" value="{{readme}}" {{^step1}}disabled="disabled"{{/step1}}
+                                style="min-height: 33px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                {{#step1}}
+                <div class="el-form-item">
+                    <div class="el-form-item__content" style="margin-left: 80px;">
+                        <div class="el-textarea" style="text-align: right;padding-top:20px; padding-right:30px">
+                            <button type="button" class="el-button el-button--primary launch-apply-btn"><span>发起申请</span></button>
+                        </div>
+                    </div>
+                </div>
+                {{/step1}}
+            </div>
+        </div>
+        <div>
+            <button type="button" class="el-button el-button--primary" style="margin-top: 12px;">
+                <span>下一步</span></button>
+        </div>
+    </div>
+</div>

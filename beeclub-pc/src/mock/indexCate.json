@@ -1,0 +1,484 @@
+[
+    {
+        "id": 19,
+        "pid": 0,
+        "children": [
+            {
+                "id": 20,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 21,
+                        "pid": 20,
+                        "children": null,
+                        "name": "C",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 22,
+                        "pid": 20,
+                        "children": null,
+                        "name": "PHP",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 23,
+                        "pid": 20,
+                        "children": null,
+                        "name": "Python",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 24,
+                        "pid": 20,
+                        "children": null,
+                        "name": "C++",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 25,
+                        "pid": 20,
+                        "children": null,
+                        "name": "Java",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 26,
+                        "pid": 20,
+                        "children": null,
+                        "name": "Linux",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "编程语言",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 27,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 28,
+                        "pid": 27,
+                        "children": null,
+                        "name": "淘宝运营",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 29,
+                        "pid": 27,
+                        "children": null,
+                        "name": "新媒体运营",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 30,
+                        "pid": 27,
+                        "children": null,
+                        "name": "SEO",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 31,
+                        "pid": 27,
+                        "children": null,
+                        "name": "SEM",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 32,
+                        "pid": 27,
+                        "children": null,
+                        "name": "网络营销",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 33,
+                        "pid": 27,
+                        "children": null,
+                        "name": "天猫运营",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 34,
+                        "pid": 27,
+                        "children": null,
+                        "name": "营销实战",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "互联网运营",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 35,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 36,
+                        "pid": 35,
+                        "children": null,
+                        "name": "JavaScript",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 37,
+                        "pid": 35,
+                        "children": null,
+                        "name": "DIV",
+                        "priority": 1,
+                        "available": true,
+                        "remark": ""
+                    }
+                ],
+                "name": "前端开发",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 38,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 39,
+                        "pid": 38,
+                        "children": null,
+                        "name": "android",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 40,
+                        "pid": 38,
+                        "children": null,
+                        "name": "iOS",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "移动开发",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 41,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 42,
+                        "pid": 41,
+                        "children": null,
+                        "name": "Cocos2d-x游戏开发",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 43,
+                        "pid": 41,
+                        "children": null,
+                        "name": "Unity3d游戏开发",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "游戏开发",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 44,
+                "pid": 19,
+                "children": [
+                    {
+                        "id": 45,
+                        "pid": 44,
+                        "children": null,
+                        "name": "大数据",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 46,
+                        "pid": 44,
+                        "children": null,
+                        "name": "区块链",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 47,
+                        "pid": 44,
+                        "children": null,
+                        "name": "人工智能",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "云计算大数据",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            }
+        ],
+        "name": "IT互联网",
+        "priority": 1,
+        "available": true,
+        "remark": null
+    },
+    {
+        "id": 48,
+        "pid": 0,
+        "children": [
+            {
+                "id": 49,
+                "pid": 48,
+                "children": [
+                    {
+                        "id": 50,
+                        "pid": 49,
+                        "children": null,
+                        "name": "平面设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 51,
+                        "pid": 49,
+                        "children": null,
+                        "name": "Photoshop",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 52,
+                        "pid": 49,
+                        "children": null,
+                        "name": "UI设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 53,
+                        "pid": 49,
+                        "children": null,
+                        "name": "形象设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 54,
+                        "pid": 49,
+                        "children": null,
+                        "name": "服装设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 55,
+                        "pid": 49,
+                        "children": null,
+                        "name": "淘宝美工",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "视觉设计",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 56,
+                "pid": 48,
+                "children": [
+                    {
+                        "id": 57,
+                        "pid": 56,
+                        "children": null,
+                        "name": "游戏模型",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 58,
+                        "pid": 56,
+                        "children": null,
+                        "name": "插画",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 59,
+                        "pid": 56,
+                        "children": null,
+                        "name": "游戏原画",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "游戏动漫",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 60,
+                "pid": 48,
+                "children": [
+                    {
+                        "id": 61,
+                        "pid": 60,
+                        "children": [
+                            {
+                                "id": 62,
+                                "pid": 61,
+                                "children": null,
+                                "name": "影视特效",
+                                "priority": 1,
+                                "available": true,
+                                "remark": null
+                            }
+                        ],
+                        "name": "影视后期",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 63,
+                        "pid": 60,
+                        "children": null,
+                        "name": "摄影拍摄",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 64,
+                        "pid": 60,
+                        "children": null,
+                        "name": "后期修图",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "摄影",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            },
+            {
+                "id": 65,
+                "pid": 48,
+                "children": [
+                    {
+                        "id": 66,
+                        "pid": 65,
+                        "children": null,
+                        "name": "室内设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    },
+                    {
+                        "id": 67,
+                        "pid": 65,
+                        "children": null,
+                        "name": "建筑设计",
+                        "priority": 1,
+                        "available": true,
+                        "remark": null
+                    }
+                ],
+                "name": "环境艺术",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            }
+        ],
+        "name": "设计创作",
+        "priority": 1,
+        "available": true,
+        "remark": null
+    },
+    {
+        "id": 68,
+        "pid": 0,
+        "children": [
+            {
+                "id": 69,
+                "pid": 68,
+                "children": null,
+                "name": "英语",
+                "priority": 1,
+                "available": true,
+                "remark": null
+            }
+        ],
+        "name": "实用外语",
+        "priority": 1,
+        "available": true,
+        "remark": null
+    },
+    {
+        "id": 70,
+        "pid": 0,
+        "children": null,
+        "name": "兴趣艺术",
+        "priority": 1,
+        "available": true,
+        "remark": null
+    }
+]

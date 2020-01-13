@@ -1,0 +1,45 @@
+.bee-com-header{
+    height: 56px;
+    line-height: 56px;
+    /* box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1); */
+    position: relative;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    z-index: 999;
+    border-bottom: 1px solid #ebebee;
+}
+
+.bee-com-header-logo > a{
+    background-image: url(./img/com-logo.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    display: inline-block;
+    width: 87px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.main-wrapper-div-line{
+    /* margin-top: 60px; */
+}
+
+.bee-com-header-nav{
+    list-style: none;
+    
+}
+.bee-com-header-nav > li{
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+}
+.bee-com-header-nav > li {
+    margin-right: 38px;
+}
+.bee-com-header-nav > li > a{
+    color: #4D555D;
+    font-weight: bold;
+}
+.bee-com-header-nav > li > a:hover,.bee-com-header-nav > li > a.active{
+    color: #1DD39A;
+}

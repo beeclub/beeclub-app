@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!../layout/head.html')  %>
+    <title> <%= htmlWebpackPlugin.options.title%> </title>
+    <script>
+        var domain = "course";
+    </script>
+</head>
+
+<body>
+    <%= require('html-loader!../layout/com-header.html')  %>
+    <div class="w course-list-top-wrapper">
+        <div>
+
+        </div>
+        <div>
+            <input type="text" name="" id="">
+        </div>
+    </div>
+    <div class="w course-cate-select-wrapper" id="course-cate-select-wrapper">
+        <div class="course-list-selected-cate-wrapper">
+            <div class="w-1200 course-list-selected-cate" id="course-list-selected-cate">
+            </div>
+        </div>
+        <div class="course-list-selected-sub-cate-wrapper">
+            <div class="w-1200 course-list-selected-sub-cate" id="course-list-selected-sub-cate">
+            </div>
+        </div>
+    </div>
+
+    <div class="w cousre-page-list-wrapper">
+        <div class="w-1200 ">
+            <div class="course-page-condition">
+                <div>
+                    <!-- <span><a>综合排序</a></span><span><a>上架时间</a></span><span><a>好评率</a></span><span><a>人气</a></span> -->
+                </div>
+            </div>
+            <div class="bee-card-5 bee-card-wrapper c-b" id="cousre-page-list"></div>
+            <div class="course-page-pagination" id="course-page-pagination">
+                <a class="disabled">首页</a><a  class="fa fa-angle-left disabled"></a><a class="active">1</a><a class="fa fa-angle-right disabled"></a><a class="disabled">尾页</a>
+            </div>
+        </div>
+
+    </div>
+    <%= require('html-loader!../layout/footer.html')  %>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<div class="course-detail-info ">
+    <div id="thumb" class="course-detail-thumb  float-left">
+        <img class="thumb-img" src="{{thumb}}" alt="{{title}}">
+    </div>
+    <div class="course-detail-purchase-info float-right   c-b">
+        <div class="course-detail-purchase-title">
+            <div class="course-title">
+                <h3 class="title">{{title}}</h3>
+                <p class="description">
+                    {{description}}
+                </p>
+            </div>
+            <div class="sem-info">
+                <div class="sem-price-share">
+                    <div class="price">
+                        <span>{{price}}</span><span style="text-decoration: line-through;"></span>
+                    </div>
+                </div>
+                <div class="sem-detail">
+                   <div>学习人数: <span class="sem-value">{{learners}}</span></div>
+                   <div>学习周期：<span class="sem-value">{{perid}}</span></div>
+                   <div>教学时长：<span class="sem-value">{{duration}}小时</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="course-detail-purchase-handle">
+            <a class="purchase-handle-btn">
+                {{submitType}}
+            </a>
+        </div>
+    </div>
+   <div class="clear-both"></div>
+</div>

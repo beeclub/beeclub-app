@@ -1,0 +1,158 @@
+
+.course-detail-main{
+    /* box-shadow: 0 8px 16px 0 rgba(28,31,33,.1); */
+}
+
+.breadcrumb{
+    line-height: 60px;
+    height: 60px;
+}
+
+.breadcrumb a[data-id]{
+    display: inline-block;
+    font-size: 13px;
+    margin:auto 10px;
+    color: 55595c;
+}
+
+.breadcrumb a[data-id].active,.breadcrumb a[data-id]:hover{
+    /* color: #cc8800; */
+    color: #1DD39A;
+    position: relative;
+}
+
+#course-belong-cate{
+    /* border-bottom: 1px solid #e8e8e8; */
+}
+
+/* .course-belong-cate a[data-id].active::after,.course-belong-cate a[data-id]:hover::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    height: 2px;
+    background-color: #1DD39A;
+    left: 50%;
+    margin-left: -40%;
+} */
+
+.course-detail-wrapper{
+    padding-bottom: 25px;
+}
+.course-detail-header{
+    padding: 20px 15px;
+}
+
+
+.course-detail-thumb {
+    width: 530px;
+    min-height: 319px;
+}
+
+.course-detail-thumb .thumb-img{
+    display: block;
+    width: 100%;
+    min-height: 319px;
+}
+
+.course-detail-purchase-info{
+    position: relative;
+    width: 613px;
+    min-height: 319px;
+}
+
+.course-detail-purchase-title{
+    padding: 12px;
+    padding-top: 0;
+    text-indent:18px;
+}
+.course-detail-purchase-title .title{
+    font-size: 24px;
+}
+.course-detail-purchase-title .description{
+    text-indent:20px;
+    margin: 10px 0 18px 0;
+    max-height: 60px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow:ellipsis;/*文字超出部分以省略号显示*/
+}
+
+.price{
+    height:50px;
+    line-height: 50px;
+    padding: 0 16px;
+    background-color: #f3f3f3;
+    color: #ff433e;
+}
+.sem-detail{
+    font-size: 12px;
+    padding: 12px 18px;
+}
+
+.sem-detail>div{
+    padding: 2px 0;
+}
+
+.sem-value{
+    color: #000000;
+    padding-left: 8px;
+}
+
+
+
+
+
+
+
+.course-detail-purchase-handle{
+    position: absolute;
+    bottom: 0;
+}
+
+.purchase-handle-btn{
+    display: inline-block;
+    width: 145px;
+    height: 50px;
+    /* background: -webkit-gradient(linear, left top, right top, from(#ff9c86), to(#f75b5f));
+    background: -webkit-linear-gradient(left, #ff9c86, #f75b5f);
+    background: -o-linear-gradient(left, #ff9c86, #f75b5f);
+    background: linear-gradient(90deg, #ff9c86, #f75b5f); */
+    background: -webkit-gradient(linear, left top, right top, from(#86E4C6), to(#1DD39A));
+    background: -webkit-linear-gradient(left, #86E4C6, #1DD39A);
+    background: -o-linear-gradient(left, #86E4C6, #1DD39A);
+    background: linear-gradient(90deg, #86E4C6, #1DD39A);
+    border-radius: 2px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+
+/* 装修 */
+.course-detail-decoration-wrapper{
+    padding: 20px 10px;
+}
+
+.course-detail-body{
+    margin: 25px auto;
+}
+
+.course-detail-content{
+    width: 920px;
+}
+.course-belong-organization{
+    width: 260px;
+}
+.course-belong-organization-title{
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #e8e8e8;
+}

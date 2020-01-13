@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%= require('html-loader!./layout/head.html')  %>
+	<title> <%= htmlWebpackPlugin.options.title%> </title>
+</head>
+<body>
+    <%= require('html-loader!./layout/sign-header.html')  %>
+    <div class="">
+        <div>
+            <div class="sign-wrap">
+                <div class="sign away-document">
+                    <div>
+                        <div class="sign-tab">
+                            <span class="active">登录</span>
+                            <i>·</i>
+                            <span class=""><a href="/register.html">注册</a></span>
+                        </div>
+                        <div class="sign-content" id="sign-in-wrap">
+                            <div class="sign-ele-item">
+                                <input class="sign-input" type="text" name="email" autocomplete="off">
+                            </div>
+                            <div class="sign-ele-item">
+                                <input class="sign-input" type="password" name="password"  autocomplete="off">
+                            </div>
+                            <div class="sign-ele-item" style="font-size: 12px;">
+                                <input type="checkbox" name="remember"/>7天内自动登录
+                            </div>
+                            <div  class="sign-ele-item">
+                                <input class="sign-btn" id="page-login-btn" type="button" value="登录"/>
+                            </div>
+                            <div class="sign-ele-item sign-swith-qcode-wrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-swith-qcode"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

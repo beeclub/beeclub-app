@@ -1,0 +1,54 @@
+<!--头部-->
+<header class="bee-com-header w">
+    <div class="w-1200">
+        <div class="float-left">
+            <ul class="bee-com-header-nav">
+                <li class="bee-com-header-logo">
+                    <a href="/" target="_self"></a>
+                </li>
+                <li><a data-id="course" href="/course/list.html">全部课程</a></li>
+                <li><a data-id="live" href="/live/index.html">直播</a></li>
+                <li><a data-id="column" href="/column/index.html">专栏</a></li>
+                <li><a data-id="mall" href="/mall/index.html">商城</a></li>
+                <!-- <li class="">
+                    <div class="com-search-wrap">
+
+                        <input class="com-search-input" type="text" id="search" name="search" autocomplete="off" />
+                        <div class="com-search-nav">
+                            <span>人工智能</span><span>微服务</span>
+                        </div>
+                        <i class="com-search-btn fa fa-search"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="float-right">
+            <!-- <ul class="com-header-user-area">
+            <li>
+                <div id="header-user-info" class="un-user-area-wrap">
+                    <div>
+                        <a href="/login.html">登录</a> / <a href="/register.html">注册</a>
+                    </div>
+                </div>
+            </li>
+            </ul> -->
+            <div class="bee-auth-area" id="loginged-user-area-wrapper">
+                <span class="bee-auth-sign-in">登录</span>
+                <span>/</span>
+                <span class="bee-auth-sign-up">注册</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        if (domain) {
+            var tag = document.querySelector('a[data-id=' + domain + ']');
+            if (tag) {
+                tag.className = 'active';
+            }
+            console.log(tag)
+            // 
+        }
+    </script>
+</header>
+<div class="main-wrapper-div-line">
+</div>

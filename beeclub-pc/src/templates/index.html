@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%= require('html-loader!./layout/head.html')  %>
+    <title>
+        <%= htmlWebpackPlugin.options.title%>
+    </title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/index-header.html')  %>
+    <!-- 首页导航 -->
+    <div class="w" style="border-bottom: 2px solid #1DD39A;">
+        <div class="w-1200">
+            <nav class="index-nav">
+                <div class="index-category-wrapper float-left">
+                    <div class="index-category-wrapper-title">
+                        <i class="fa fa-list-ul"></i><span>课程分类</span>
+                    </div>
+                    <div class="index-category-container">
+                        <ul class="index-categorys" id="indexCategorys">
+                            <!-- <li class="index-category" id="index_category">
+                                <a class="index-category-title" href="/course"><i></i><span>互联网1</span></a>
+                                <div class="index-category-content">
+                                    <div class="cate-title">
+                                        <span>标题</span>
+                                    </div>
+                                    <div class="cate-list">
+                                        <div class="pos-rel">
+                                            <div class="inline-block sub-cate-title">
+                                                <a href="/course/list?cateId=1">测试</a>
+                                            </div>
+                                            <div class="inline-block sub-cate-list">
+                                                <a href="/course/list?cateId=2">自动测试</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="float-left">
+                    <div class="index-nav-wrapper">
+                        <a href="/course/list.html">课程</a>
+                        <a href="/live/index.html">直播</a>
+                        <a href="/column/index.html">专栏</a>
+                        <a href="/mall/index.html">商城</a>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <!-- 客服电话 -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="carousel-wrapper w">
+        <div class="w-1200 pos-rel">
+            <div class="index-user-entry-wrapper">
+                <div>
+                    欢迎
+                </div>
+                <div>
+                    <a href="/login.html">登录</a>
+                </div>
+                <div>
+                    选择过程，或者学习提醒
+                </div>
+            </div>
+        </div>
+        <!-- <div id="banner-slide-wrapper" class="banner-slide-wrapper" style="background-color:#4745CD;">
+            <div class="w-1152 pos-rel">
+                <div class="banner-slide-container">
+                    <ul class="banner-slide">
+                        <li>
+                            <a href="" target="_blank">
+                                <img src="https://p.qpic.cn/qqconadmin/0/ee548ee95e904519b296359b4cba9e4e/0?tp=webp"
+                                    alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="banner-slide-btn banner-slide-btn-pre"><i class="fa fa-angle-left"></i></div>
+                    <div class="banner-slide-btn banner-slide-btn-next"><i class="fa fa-angle-right"></i></div>
+                    <div class="banner-slide-dots">
+                        <span class="active"></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="banner-slide-wrapper" class="banner-slide-wrapper" style="background-color:rgb(111, 111, 116);">
+            <div class="w-1152 pos-rel">
+                <div class="banner-slide-container">
+                    <div class="banner-slide-btn banner-slide-btn-pre"><i class="fa fa-angle-left"></i></div>
+                    <div class="banner-slide-btn banner-slide-btn-next"><i class="fa fa-angle-right"></i></div>
+                </div>
+            </div>
+            <ul class="banner-slide"></ul>
+            <div class="w-1152 pos-rel">
+                <div class="banner-slide-container">
+                    <div class="banner-slide-dots">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="index-recommend-wrapper w" id="index-recommend-wrapper">
+        <div class="index-recommend">
+            <div class="w-1200">
+                <div class="index-recommend-title">上新</div>
+                <div class="index-recomment-content">
+                    <div class="bee-card-5 bee-card-wrapper">
+                        <div class="bee-card">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-recommend">
+            <div class="w-1200">
+                <div class="index-recommend-title">热门</div>
+                <div class="index-recomment-content">
+                    <div class="bee-card-5 bee-card-wrapper">
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-recommend">
+            <div class="w-1200">
+                <div class="index-recommend-title">专栏</div>
+                <div class="index-recomment-content">
+                    <div class="bee-card-3 bee-card-wrapper">
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">2</div>
+                        <div class="bee-card">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-recommend">
+            <div class="w-1200">
+                <div class="index-recommend-title">专栏</div>
+                <div class="index-recomment-content">
+                    <div class="bee-card-2 bee-card-wrapper">
+                        <div class="bee-card">1</div>
+                        <div class="bee-card">2</div>
+                        <div class="bee-card">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= require('html-loader!./layout/friendlyLink.html')  %>
+    <%= require('html-loader!./layout/footer.html')  %>
+</body>
+
+</html>

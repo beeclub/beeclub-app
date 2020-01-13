@@ -1,0 +1,36 @@
+{{#list}}
+<div class="bee-card">
+    <div class="course-card index-course-card">
+        <a class="course-card-thumb" href="/course/detail.html?id={{id}}">
+            <img src="http://beeclub.oss-cn-shanghai.aliyuncs.com/course/1577365089939.jpg?Expires=1892725080&OSSAccessKeyId=LTAI4Fv5EmuA9jMfJ79TzGdV&Signature=9fmiJlo2PooWf8NwXUmg4iN6nh8%3D" alt="" srcset="">
+        </a>
+        <div>
+            <a class="course-card-title" href="/course/detail.html?id={{id}}">{{name}}</a>
+        </div>
+        <div class="course-card-wom">
+            <span class="float-left"><i class="fa fa-user-o"></i>{{signNums}}</span>
+            <span class="float-right">{{auditions}}人评价</span>
+        </div>
+        <div class="course-card-sem clear-both">
+            <span>￥ {{price}}</span>
+        </div>
+    </div>
+</div>
+{{/list}}
+<style>
+
+.bee-card{
+    /* box-shadow: none; */
+    border-radius: 8px;
+}
+.bee-card > .index-course-card{
+    height: 210px;
+    border: none;
+    
+}
+
+.bee-card > .index-course-card img{
+    border-radius: 5px 5px 0 0;
+}
+
+</style>
