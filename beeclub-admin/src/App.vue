@@ -11,10 +11,18 @@ export default {
 </script>
 
 <style>
-html,body{
+html{
+  padding: 0;margin: 0;
+}
+body{
   padding: 0;margin: 0;height: 100%;
 }
+html, #app {
+  height: 100%;
+}
 #app{
-  height: 100%;padding: 0;margin: 0;
+  padding: 0;margin: 0;
+  height: 100%;
+  position: relative;
 }
 </style>

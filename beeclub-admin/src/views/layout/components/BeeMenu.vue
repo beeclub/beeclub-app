@@ -11,6 +11,7 @@
             text-color="#FFFFFF"
             active-text-color="#00B9B2"
             :router="true"
+            menu-trigger="click"
             @select="handleSelect"
         >
             <!-- <BeeMenuItem v-for="route in menus" :key="route.id" :item="route"/> -->
@@ -19,7 +20,7 @@
                     <i v-if="route.icon" :class="route.icon"></i>
                     <span slot="title">{{route.name}}</span>
                 </el-menu-item>
-                <el-submenu v-else :index="route.id + ''" :key="route.id">
+                <el-submenu popper-append-to-body v-else :index="route.id + ''" :key="route.id">
                     <template slot="title">
                         <i v-if="route.icon" :class="route.icon"></i>
                         <span slot="title">{{route.name}}</span>

@@ -417,4 +417,6 @@ export default {
   background-color: #00b9b2 !important;
   color: #ffffff !important;
 }
+
+
 </style>
