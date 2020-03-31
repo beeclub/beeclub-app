@@ -97,8 +97,6 @@
 
 <script>
 import { mapState, mapActions } from "vuex";
-import { constants } from "fs";
-import { removeToken } from "@/utils/auth";
 import BeeMenu from "./components/BeeMenu";
 export default {
   name: "Laout",
@@ -418,5 +416,14 @@ export default {
   color: #ffffff !important;
 }
 
-
+.el-menu {
+  max-height: 100vh;
+}
+.el-menu--vertical >.el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+.el-scrollbar {
+  max-height: 100vh;
+}
 </style>

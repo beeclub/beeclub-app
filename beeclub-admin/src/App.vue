@@ -12,13 +12,13 @@ export default {
 
 <style>
 html{
-  padding: 0;margin: 0;
+  padding: 0;margin: 0;position: relative;
 }
 body{
-  padding: 0;margin: 0;height: 100%;
+  padding: 0;margin: 0;height: 100%;position: relative;
 }
 html, #app {
-  height: 100%;
+  height: 100%;position: relative;
 }
 #app{
   padding: 0;margin: 0;
